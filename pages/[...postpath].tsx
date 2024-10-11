@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`http://jimili268.byethost7.com/graphql` + encodeURI(path as string)
+					`http://jimili268.byethost7.com` + encodeURI(path as string)
 				}`,
 			},
 		};
