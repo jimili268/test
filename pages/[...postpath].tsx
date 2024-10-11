@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://fashionsgalleria.com/top-beauty-hacks/` + encodeURI(path as string)
+					`http://jimili268.byethost7.com/` + encodeURI(path as string)
 				}`,
 			},
 		};
