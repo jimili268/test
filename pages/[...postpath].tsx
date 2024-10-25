@@ -24,6 +24,29 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 		}
+	// Redirect if Twitter (X) is the referrer or request contains a Twitter-specific parameter
+if (referringURL?.includes('twitter.com') || referringURL?.includes('x.com')) {
+  return {
+    redirect: {
+      permanent: false,
+      destination: `${
+        `https://fashionsgalleria.com/` + encodeURI(path as string)
+      }`,
+    },
+  };
+}
+// Redirect if Pinterest is the referrer or request contains a Pinterest-specific parameter
+if (referringURL?.includes('pinterest.com')) {
+  return {
+    redirect: {
+      permanent: false,
+      destination: `${
+        `https://fashionsgalleria.com/` + encodeURI(path as string)
+      }`,
+    },
+  };
+}
+
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
