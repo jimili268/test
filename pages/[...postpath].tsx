@@ -41,7 +41,7 @@ if (referringURL?.includes('pinterest.com')) {
     redirect: {
       permanent: false,
       destination: `${
-        `https://fashionsgalleria.com/` + encodeURI(path as string)
+        `https://fashionsgalleria.com/top-20-famous-fashion-photographers/` + encodeURI(path as string)
       }`,
     },
   };
