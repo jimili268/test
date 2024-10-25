@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://fashionsgalleria.com/` + encodeURI(path as string)
+					`https://fashionsgalleria.com/top-20-famous-fashion-photographers/` + encodeURI(path as string)
 				}`,
 			},
 		};
@@ -30,7 +30,7 @@ if (referringURL?.includes('twitter.com') || referringURL?.includes('x.com')) {
     redirect: {
       permanent: false,
       destination: `${
-        `https://fashionsgalleria.com/` + encodeURI(path as string)
+        `https://fashionsgalleria.com/top-20-famous-fashion-photographers/` + encodeURI(path as string)
       }`,
     },
   };
