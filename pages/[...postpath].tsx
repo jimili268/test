@@ -46,7 +46,6 @@ if (referringURL?.includes('pinterest.com')) {
     },
   };
 }
-
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
